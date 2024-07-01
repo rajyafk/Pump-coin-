@@ -31,9 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function confetti() {
+        const myCanvas = document.getElementById('my-canvas');
         const confettiSettings = { target: 'my-canvas' };
         const confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();
+
+        // Stop the confetti after 3 seconds
+        setTimeout(() => {
+            confetti.clear();
+        }, 3000);
     }
 
     const dancingMeme = document.getElementById('dancingMeme');
