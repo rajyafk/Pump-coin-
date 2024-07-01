@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 .hero-section {
-    background: url('banner.jpeg') no-repeat center center/cover;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,12 +69,28 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-.feature-item, .milestone, .team-member, .faq-item {
-    background: white;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#fun {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: #e0e0e0;
+}
+
+.pepe-rocket, .dancing-meme, .coin-flip {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    margin: 1rem;
+}
+
+.pepe-rocket img, .dancing-meme img, .coin-flip img {
+    width: 100%;
+}
+
+.pepe-rocket.clicked, .coin-flip.clicked {
+    transform: translateY(-500px) rotate(45deg);
 }
 
 .contact form {
