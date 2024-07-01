@@ -93,43 +93,6 @@ section h2 {
     transform: translateY(-500px) rotate(45deg);
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact form label {
-    margin-top: 0.5rem;
-}
-
-.contact form input, .contact form textarea {
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.contact form button {
-    margin-top: 1rem;
-    background: #ff4081;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact form button:hover {
-    background: #ff79a1;
-}
-
-.social-media a {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: #ff4081;
-    font-size: 1.5rem;
-}
-
 footer {
     background: #333;
     color: white;
