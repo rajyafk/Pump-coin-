@@ -17,14 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2000);
     });
 
-    const coinFlip = document.getElementById('coinFlip');
-    coinFlip.addEventListener('click', () => {
-        coinFlip.classList.add('clicked');
-        setTimeout(() => {
-            coinFlip.classList.remove('clicked');
-        }, 2000);
-    });
-
     const confettiButton = document.getElementById('confettiButton');
     confettiButton.addEventListener('click', () => {
         confetti();
@@ -42,11 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
-    const dancingMeme = document.getElementById('dancingMeme');
-    dancingMeme.addEventListener('mouseover', () => {
-        dancingMeme.classList.add('dance');
-    });
-    dancingMeme.addEventListener('mouseout', () => {
-        dancingMeme.classList.remove('dance');
-    });
 });
